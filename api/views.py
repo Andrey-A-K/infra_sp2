@@ -16,7 +16,7 @@ from rest_framework.permissions import (
     IsAdminUser,
     IsAuthenticatedOrReadOnly
 )
-from .models import Titles, Reviews, Titles, Categories, Genres
+from .models import Reviews, Titles, Categories, Genres
 from .serializers import (
     CommentSerializer,
     ReviewsSerializer,
