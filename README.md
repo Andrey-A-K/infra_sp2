@@ -21,6 +21,17 @@ git clone https://github.com/Andrey-A-K/infra_sp2
 cd infra_sp2
 ```
 
+В корне проекта создать файл .env:
+
+```
+DB_ENGINE=django.db.backends.postgresql # указываем, что работаем с postgresql
+DB_NAME=postgres # имя базы данных
+POSTGRES_USER=postgres # логин для подключения к базе данных
+POSTGRES_PASSWORD=postgres # пароль для подключения к БД (установите свой)
+DB_HOST=db # название сервиса (контейнера)
+DB_PORT=5432 # порт для подключения к БД
+```
+
 Запустить проект(при первом запуске начнется сборка):
 
 ```
