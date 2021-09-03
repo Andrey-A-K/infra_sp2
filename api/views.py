@@ -1,12 +1,5 @@
-from django_filters.rest_framework import DjangoFilterBackend
-from .utils import generate_mail
-from rest_framework.permissions import (
-    AllowAny,
-    IsAuthenticated,
-)
 from django.contrib.auth import get_user_model
 from rest_framework.pagination import PageNumberPagination
-from django.shortcuts import get_object_or_404
 from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
 from django.shortcuts import get_object_or_404
 from django.db.models import Avg
@@ -20,9 +13,7 @@ from .permissions import (
     IsAdmin, IsAdminUserOrReadOnly, ReviewCommentPermissions
 )
 from rest_framework.permissions import (
-    AllowAny,
     IsAdminUser,
-    IsAuthenticated,
     IsAuthenticatedOrReadOnly
 )
 from .models import Titles, Reviews, Titles, Categories, Genres

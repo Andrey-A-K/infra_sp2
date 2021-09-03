@@ -1,4 +1,4 @@
-from .models import Comment, Reviews, Titles, Genres, Categories, User
+from .models import Comment, Reviews, Titles, Genres, Categories
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
