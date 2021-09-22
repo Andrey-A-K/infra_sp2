@@ -39,10 +39,15 @@ docker-compose up
 
 ```
 
-### Для работы в админке создайте суперюзера:
+### Для работы в админке проведите миграции и создайте суперюзера:
+
 
 ```
 sudo docker exec -it <id_вашего_контейнера> bash
+```
+
+```
+python manage.py makemigrations && python manage.py migrate
 ```
 
 ```
